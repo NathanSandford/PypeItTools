@@ -1,0 +1,5 @@
+.ipynb_checkpoints/*
+data/*
+pypeit_tools.egg-info/*
+pypeit_tools/.ipynb_checkpoints/*
+pypeit_tools/__pycache__/*
