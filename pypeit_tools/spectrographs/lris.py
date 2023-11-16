@@ -470,7 +470,7 @@ class LRISMask:
         ax1.set_title(f'{objname}', fontsize=86, pad=30)
         ymax1 = 0
         ymax2 = 0
-        for specobj in exp_specobjs_b:
+        for exp, specobj in exp_specobjs_b.items():
             ax1.scatter(
                 specobj.OPT_WAVE[specobj.OPT_MASK],
                 specobj.OPT_COUNTS[specobj.OPT_MASK],
@@ -483,7 +483,7 @@ class LRISMask:
                 marker='.',
                 alpha=0.2,
             )
-        for specobj in exp_specobjs_r:
+        for exp, specobj in exp_specobjs_r.items():
             ax1.scatter(
                 specobj.OPT_WAVE[specobj.OPT_MASK],
                 specobj.OPT_COUNTS[specobj.OPT_MASK],
